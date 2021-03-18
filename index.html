@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Online Shopping</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="This is an online shopping layout">
+        <meta name="keywords" content="Products,Shopping">
+        <meta name="author" content="Daniela Muresan">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300;400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="external_resources/font-awsesome/css/all.css">
+        <link rel="stylesheet" type="text/css" href="resources/main.css">
+
+        <script src="external_resources/jquery/jquery-3.6.0.min.js"></script>
+    </head>
+    <body>
+        <div class="page-wrapper">
+            <header>
+                <div class="header-text-info">
+                    <h1>Shop at <span>the right speed</span></h1>
+                    <div>The Winter Collection:</div>
+                    <div>Liberated movement meets seamless support</div>
+                    <button><a href="#">Shop</a></button>
+                </div>
+
+                <div class="header-img">
+                    <img src="assets/icon-piggy-bank.png" alt="icon-piggy-bank.png">
+                </div>
+            </header>
+            <section class="navigation">
+                <nav>
+                    <ul class="navigation-list">
+                        <li><a class="navigation-item selected" data-content="coats">Coats</a></li>
+                        <li><a class="navigation-item" data-content="dresses">Dresses</a></li>
+                        <li><a class="navigation-item" data-content="jersey">Jersey</a></li>
+                        <li><a class="navigation-item" data-content="pants">Pants</a></li>
+                    </ul>
+                </nav>
+            </section>
+            <main>
+                <div class="coats-content-wrapper">
+                    
+                        
+                        <!-- <div class="single-coats-wrapper" data-id=1>
+                            <div class="coats-image-wrapper"></div>
+                            
+                            <div class="title-and-price-wrapper">
+                                <div class="title-wrapper">Top Coat</div>
+                                <div class="price-wrapper">$105</div>
+                            </div>
+
+                        </div> -->
+                 
+                </div>
+
+            </main>
+
+            <section class="categories">
+                <h2>Categories</h2>
+                <div class="categories-wrapper">
+                    <div><a href="#">Women</a> </div>
+                    <div><a href="#">Man</a></div>
+                    <div><a href="#">Kids</a></div>
+                    <div><a href="#">New Collection</a></div>
+                </div>
+            </section>
+        </div>
+
+        <div class="overlay">
+            <div class="overlay-content-wrapper">
+                <div class="close"><i class="fas fa-times"></i></div>
+                <div class="product-wrapper"></div>
+            </div>
+        </div>
+
+        <script src="resources/products.js"></script>
+        <script src="resources/load-product.js"></script>
+    </body> 
+</html>
