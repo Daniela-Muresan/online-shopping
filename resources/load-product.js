@@ -1,7 +1,7 @@
 $(function() {
 
     const  coatsContentWrapper = $('.coats-content-wrapper');
-          getpropertyHTML = function(propertyObj) {
+          getcoatsHTML = function(propertyObj) {
             return `<div class="single-coats-wrapper" data-id=${propertyObj.id}>
             <div class="coats-image-wrapper" style="background-image: url(assets/coats/${propertyObj.imgUrl})"></div>
             
