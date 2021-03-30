@@ -34,13 +34,13 @@ h1{
     margin: 10px 0;
     text-transform: uppercase;
 }
-h1 span{
+span{
     display: block;
 }
 .header-text-info button{
-    width: 80px;
+    width: 100px;
     height: 40px;
-    margin: 10px 0 0 10px;
+    margin: 10px 0 0 5px;
     border-radius: 30px;
     background-color: #fff ;
     border: none;
@@ -49,6 +49,7 @@ h1 span{
     text-decoration: none;
     color: #000;
     text-transform: uppercase;
+    font-size: 14px;
 }
 .header-img {
     /* border: 3px solid black; */
@@ -69,25 +70,26 @@ section.navigation{
     align-items: center;
  
 }
-.navigation-list{
+ul{
     list-style-type: none;
     display: inline-block
 }
 .navigation-list li{
     display: inline-block;
     margin: 0 30px;
-    width: 80px;
+    width: 90px;
     height: 30px;
     border-radius: 30px;
     text-align: center;
 }
-.navigation-list li:first-child{
+/* .navigation-list li:first-child{
     background-color: #f8d9e0;
-}
+} */
 a{
     font-size: 20px;
     color: #000;
     text-decoration: none;
+    line-height: 30px;
 }
 main{
     /* border: 3px solid black; */
@@ -97,16 +99,21 @@ main{
 .coats-content-wrapper {
     /* border: 3px solid black; */
     display: flex;
+    justify-content: center;
     height: 100%;
     flex-wrap: wrap;
+    min-width: 1100px;
 } 
 .single-coats-wrapper{
     box-sizing: border-box;
-    width: 24%;
+    width: 23%;
     height: 100%;
     background: #fff;
     margin-right: 20px;
     /* margin-bottom: 40px; */
+}
+.single-coats-wrapper div:first-child{
+    margin-left: 10px;
 }
 .coats-image-wrapper{
     width: 100%;
@@ -133,11 +140,12 @@ section.categories{
 h2{
     font-size: 25px;
     font-weight: 400;
-    margin: 50px ;
+    margin: 40px 0 30px 50px;
 }
+
 .categories-wrapper{
     width: 100%;
-    height: 150px;
+    height: 180px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -150,6 +158,7 @@ h2{
     height: 130px;
     border-radius: 30px;
 }
+
 .overlay {
     width: 100%;
     height: 100%;
@@ -159,8 +168,7 @@ h2{
     right: 0;
     left: 0;
     background: rgba(0, 0, 0, .6);
-    /* alternative here: use a separate hidden class */
-    display: none;
+    
 }
 
 .overlay-content-wrapper {
@@ -168,13 +176,130 @@ h2{
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center;    
 }
-
+.close-btn{
+    position: absolute;
+    right: 150px;
+    top: 20px;
+    font-size: 50px;
+    color: #f8d9e0;
+}
+.close-btn:hover{
+    font-size: 60px;
+}
 .product-wrapper {
     width: 400px;
-    height: 700px;
+    height: 600px;
     background-color: #fff;
     /* background-repeat: no-repeat; */
-    background-size: cover;
+    background-size: 50%;
+    position: absolute;
+}
+.product-details{
+    position: relative;
+    top: 25%;
+    background-color: #fff;
+    width: 100%;
+    height: 80%;
+    border-radius: 30px;
+}
+
+/* Orverlay .product-details */
+.product-details{
+    padding: 30px 20px 20px 20px;
+}
+h3{
+    font-size: 25px;
+}
+.price{
+    color: #a1a3a5;
+    font-size: 25px;
+    font-weight: 100;
+}
+section{
+    margin: 10px 0;
+}
+.subtitle{
+    font-size: 20px;
+    font-weight: 500;
+}
+div.individual-size{
+    display: inline-block;
+}
+.individual-size input{
+    display: none;
+}
+.individual-size label{
+    display: inline-block;
+    /* border:1px solid black; */
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    background-color: rgb(238, 237, 237);
+    border-bottom: 3px solid rgb(204, 201, 201);
+    text-align: center;
+    line-height: 20px;
+    color: #afafaf;
+    font-size: 10px;
+}
+.individual-size input:checked ~label{
+    background-color: #f8d9e0;
+}
+.menu-overlay {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+.menu-overlay li{
+    background-color: #e7e8e9;
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 30px;
+}
+.menu-overlay li.selected{
+    background-color: #f8d9e0;
+}
+.composition-country-wrapper{
+    height: 60px;
+    width: 100%;
+    padding-right: 10px;
+
+}
+.composition{
+    float: left;
+}
+.country{
+    float: right;
+    text-align: right;
+}
+.care div:last-child{
+    color: #828282;
+    margin: 5px 0;
+}
+.subtitle span{
+    font-weight: 100;
+    color: #828282;
+    font-size: 15px;
+}
+button.add-to-chart{
+    width: 100%;
+    height: 30px;
+    border-radius: 30px;
+    color: #fff;
+    background-color: #333333;
+    margin-top: 30px;
+    border: none;
+    font-size: 14px;
+}
+.add-to-chart:hover{
+    font-size: 16px;
+}
+.hidden{
+    display: none;
+}
+.selected{
+    background-color: #f8d9e0;
 }

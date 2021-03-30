@@ -31,7 +31,7 @@
             <section class="navigation">
                 <nav>
                     <ul class="navigation-list">
-                        <li><a class="navigation-item selected" data-content="coats">Coats</a></li>
+                        <li class="selected"><a class="navigation-item" data-content="coats">Coats</a></li>
                         <li><a class="navigation-item" data-content="dresses">Dresses</a></li>
                         <li><a class="navigation-item" data-content="jersey">Jersey</a></li>
                         <li><a class="navigation-item" data-content="pants">Pants</a></li>
@@ -43,7 +43,7 @@
                     
                         
                         <!-- <div class="single-coats-wrapper" data-id=1>
-                            <div class="coats-image-wrapper"></div>
+                            <div class="coats-image-wrapper" data-img="frogs.jpg"></div>
                             
                             <div class="title-and-price-wrapper">
                                 <div class="title-wrapper">Top Coat</div>
@@ -67,10 +67,70 @@
             </section>
         </div>
 
-        <div class="overlay">
+        <div class="overlay hidden">
             <div class="overlay-content-wrapper">
-                <div class="close"><i class="fas fa-times"></i></div>
-                <div class="product-wrapper"></div>
+                <div class="close-btn"><i class="fas fa-times"></i></div>
+                <div class="product-wrapper">
+                    <div class="product-details">
+                        <form>
+                            <div class= "product-header">
+                                <!-- <h3>Top Coat</h3> -->
+                                <!-- <div class="price">$60</div> -->
+                            </div>
+                            
+                            <section>
+                                <div class="size">
+                                    <div class="subtitle">Your size</div>
+                                    <div class="size-boxes">
+                                        <div class="individual-size">                               
+                                            <input type="radio" id="size-s" name="size" value="s">
+                                            <label for="size-s">S</label>
+                                        </div>
+                                        <div class="individual-size">                              
+                                            <input type="radio" id="size-m" name="size" value="m">
+                                            <label for="size-m">M</label>
+                                        </div>
+                                        <div class="individual-size">                              
+                                            <input type="radio" id="size-l" name="size" value="l">
+                                            <label for="size-l">L</label>
+                                        </div>
+                                        <div class="individual-size">                              
+                                            <input type="radio" id="size-xl" name="size" value="xl">
+                                            <label for="size-xl">XL</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section>
+                                <ul class="menu-overlay">
+                                    <li class="selected">Details</li>
+                                    <li>Order</li>
+                                    <li>Payment</li>
+                                </ul>
+                            </section>
+
+                            <section>
+                                <div class="details">
+                                    <div class="composition-country-wrapper">
+                                        <!-- <div class="composition subtitle">Composition <span>100% Polyester</span></div>
+                                        <div class="country subtitle">Country <span>Poland</span></div> -->
+                                    </div>
+                                    
+                                    <div class="care">
+                                        <div class="subtitle care-details">Care</div>
+                                        <!-- <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere distinctio aliquid quia a deleniti sint placeat inventore similique unde laboriosam, dolore dignissimos possimus ducimus corrupti</div> -->
+
+                                    </div>
+                                </div>
+                            </section>
+
+                            <button class="add-to-chart" type="submit">Add to Chart</button>
+                        </form>
+                    </div>
+                </div>
+               
+
             </div>
         </div>
 
