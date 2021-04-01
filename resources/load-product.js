@@ -59,7 +59,8 @@ $(function() {
             coatsCompositionCountryHMTL = getCompositionCountryHTML(coatsProp),
             coatsCareHMTL = getCareHTML(coatsProp),
             coatsItems= $('.coats-image-wrapper');
-        productHeader.append(coatsNameHMTL);
+        // productHeader.append(coatsNameHMTL);
+        productHeader.html(coatsNameHMTL);
         compositionCountry.append(coatsCompositionCountryHMTL);
         careDetails.append(coatsCareHMTL);
         imgWrapper.css({backgroundImage: `url(assets/coats/${coatsProp.imgUrl})`});
@@ -72,5 +73,8 @@ $(function() {
         // nu cred ca este cea mai buna solutie, dar daca nu il pun imi tot completeaza cu date de fiecare data cand dau click pe o poza
         // ma poti ajuta, te rog cu o sugestie de cum as putea sa rescriu datele la click pe poza?
         location.reload();
+
+        // asta se intampla pentru ca ai folosit append() (randurile 62, 64, 65)si atunci el iti adauga in continuare. folosind html() de fiecare data inlocuiesti continutul curent
+        // o alta solutie de implementare aici alternativ la functiile tale getNameHTML(), getCompositionCountryHTML(), getCareHTML() era sa folosesti selectii si sa adaugi strict continutul, nu sa generezi HTML de fiecare data, ca la urma urmei partea de structura/html nu ti se modifica, doar continutul in sine
     })
 });
